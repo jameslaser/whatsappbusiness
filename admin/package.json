@@ -1,0 +1,17 @@
+{
+  "name": "jlhr-admin-portal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Admin portal for James Laser Hair Removal for Men: appointments, clients and consent, message templates, offers. Static app; data in Supabase.",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.119.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
