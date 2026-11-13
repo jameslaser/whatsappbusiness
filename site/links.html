@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>روابط واتساب الجاهزة · WhatsApp link builder | James Laser Hair Removal for Men</title>
+<meta name="description" content="Internal tool for the clinic team: ready WhatsApp links for every area.">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0a1a2b">
+<link rel="preload" href="fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="on-dark">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="./" dir="ltr">James Laser Hair Removal for Men<small>Harmony Derma · Al Hamra, Riyadh</small></a>
+      <div class="tools"><button class="lang" id="lang-toggle" type="button">English</button></div>
+    </div>
+  </div>
+  <header class="hero">
+    <div class="wrap">
+      <h1><span data-l="ar">روابط واتساب الجاهزة</span><span data-l="en">WhatsApp link builder</span></h1>
+      <p>
+        <span data-l="ar">أداة داخلية لفريق العيادة: انسخ رابطاً جاهزاً لأي منطقة وضعه في المنشورات والمدونة وردود الواتساب السريعة.</span>
+        <span data-l="en">Internal tool for the clinic team: copy a ready link for any area and use it in posts, the blog and WhatsApp quick replies.</span>
+      </p>
+    </div>
+  </header>
+</div>
+
+<main class="wrap">
+
+  <section aria-labelledby="mk-h">
+    <h2 id="mk-h"><span data-l="ar">اصنع رابطاً</span><span data-l="en">Make a link</span></h2>
+    <div class="card">
+      <form onsubmit="return false">
+        <div class="row2">
+          <div class="field">
+            <label for="sel"><span data-l="ar">المنطقة</span><span data-l="en">Area</span></label>
+            <select id="sel"></select>
+          </div>
+          <div class="field">
+            <label for="ln"><span data-l="ar">لغة الرسالة</span><span data-l="en">Message language</span></label>
+            <select id="ln">
+              <option value="ar">العربية</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="custom"><span data-l="ar">أو اكتب رسالتك بنفسك (اختياري)</span><span data-l="en">Or write your own message (optional)</span></label>
+          <textarea id="custom" maxlength="400"></textarea>
+        </div>
+        <div>
+          <span class="linkout" id="out" dir="ltr"></span>
+          <div class="actions" style="margin-top:12px">
+            <button type="button" class="btn btn-dark" id="copy-main"><span data-l="ar">انسخ الرابط</span><span data-l="en">Copy link</span></button>
+            <a class="btn btn-line" id="test" href="#" target="_blank" rel="noopener"><span data-l="ar">جرّب الرابط</span><span data-l="en">Test the link</span></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section aria-labelledby="gen-h">
+    <h2 id="gen-h"><span data-l="ar">روابط عامة</span><span data-l="en">General links</span></h2>
+    <div class="card" id="general"></div>
+  </section>
+
+  <section aria-labelledby="all-h">
+    <h2 id="all-h"><span data-l="ar">كل المناطق (22)</span><span data-l="en">All areas (22)</span></h2>
+    <p class="sub">
+      <span data-l="ar">لكل منطقة رابطان: بالعربية وبالإنجليزية.</span>
+      <span data-l="en">Each area has two links: Arabic and English.</span>
+    </p>
+    <div class="card" id="all"></div>
+    <div class="actions" style="margin-top:14px">
+      <button type="button" class="btn btn-line" id="csv"><span data-l="ar">نزّل الجدول CSV</span><span data-l="en">Download CSV</span></button>
+    </div>
+  </section>
+</main>
+
+<footer class="legal">
+  <div class="wrap">
+    <div class="ar" lang="ar" dir="rtl">
+      هذه الأداة للاستخدام الداخلي. أي محتوى يُنشر للعملاء يجب أن يتضمن بيانات الإعلان والتحذيرات الظاهرة في تذييل الصفحة الرئيسية، ويلتزم بقواعد وزارة الصحة.
+    </div>
+    <div class="en" lang="en" dir="ltr">
+      This tool is for internal use. Anything published for clients must carry the advertisement details and warnings shown in the home page footer and follow Ministry of Health rules.
+    </div>
+  </div>
+</footer>
+
+<script src="data/areas.js"></script>
+<script src="assets/wa.js"></script>
+<script src="assets/links.js"></script>
+</body>
+</html>

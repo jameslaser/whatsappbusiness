@@ -1,0 +1,21 @@
+# Cloudflare Worker config. NOT deployed. Do not put secrets in this file.
+name = "jlhr-whatsapp-webhook"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[vars]
+GRAPH_VERSION = "v22.0"                                  # check Meta's current Graph API version before go-live
+SITE_URL = "https://jameslaser.github.io/whatsappbusiness/"
+REPLIES_ENABLED = "false"                                # replies stay OFF until the plan's go-live checklist is done
+
+# Secrets (set with: npx wrangler secret put NAME):
+#   VERIFY_TOKEN    any long random string; you also paste it into Meta's webhook settings
+#   APP_SECRET      Meta app secret (App settings > Basic)
+#   WHATSAPP_TOKEN  access token for the WhatsApp Business Account (use a System User token for production)
+#   PHONE_NUMBER_ID the WhatsApp phone number ID (not the phone number itself)
+#   HANDOFF_WEBHOOK_URL (optional) a URL that accepts a JSON POST, e.g. a Google Apps Script web app that emails the clinic
+
+# Optional duplicate-delivery guard (Meta can resend the same event). Create with: npx wrangler kv namespace create SEEN
+# [[kv_namespaces]]
+# binding = "SEEN"
+# id = "<id printed by the command above>"

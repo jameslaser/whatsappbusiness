@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>طلب موعد عبر واتساب · Appointment request | James Laser Hair Removal for Men</title>
+<meta name="description" content="أرسل طلب موعد عبر واتساب إلى James Laser Hair Removal for Men، الحمراء، الرياض. Send an appointment request on WhatsApp, Al Hamra, Riyadh.">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#0a1a2b">
+<link rel="preload" href="fonts/ibm-plex-sans-arabic-arabic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="on-dark">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="./" dir="ltr">James Laser Hair Removal for Men<small>Harmony Derma · Al Hamra, Riyadh</small></a>
+      <div class="tools"><button class="lang" id="lang-toggle" type="button">English</button></div>
+    </div>
+  </div>
+  <header class="hero">
+    <div class="wrap">
+      <span class="status" id="status" hidden></span>
+      <h1><span data-l="ar">اطلب موعداً</span><span data-l="en">Request an appointment</span></h1>
+      <p>
+        <span data-l="ar">املأ الحقول، وسنجهّز لك رسالة واتساب. لا يُرسَل شيء قبل أن تضغط «إرسال» داخل واتساب.</span>
+        <span data-l="en">Fill in the fields and we prepare a WhatsApp message for you. Nothing is sent until you tap "send" inside WhatsApp.</span>
+      </p>
+    </div>
+  </header>
+</div>
+
+<main class="wrap">
+  <p class="note">
+    <span data-l="ar">هذا طلب وليس تأكيداً للموعد. يتأكد موعدك برد العيادة على واتساب.</span>
+    <span data-l="en">This is a request, not a confirmed booking. Your appointment is confirmed by the clinic's reply on WhatsApp.</span>
+  </p>
+
+  <form id="book" novalidate autocomplete="off" style="margin-top:22px">
+
+    <div class="field">
+      <label for="name"><span data-l="ar">الاسم</span><span data-l="en">Name</span></label>
+      <input id="name" name="name" type="text" maxlength="60" autocomplete="off" required>
+      <p class="err" id="err-name" role="alert"></p>
+    </div>
+
+    <fieldset id="areas-set">
+      <legend><span data-l="ar">المناطق المطلوبة</span><span data-l="en">Areas you are interested in</span></legend>
+      <div id="areas"></div>
+      <label class="opt" style="margin-top:12px"><input type="checkbox" id="unsure"><span data-l="ar">لست متأكداً بعد، أريد الاستفسار</span><span data-l="en">Not sure yet, I want to ask first</span></label>
+      <p class="err" id="err-areas" role="alert"></p>
+    </fieldset>
+
+    <div class="row2">
+      <div class="field">
+        <label for="day"><span data-l="ar">اليوم المفضل</span><span data-l="en">Preferred day</span></label>
+        <select id="day" name="day"></select>
+      </div>
+      <div class="field">
+        <label for="time"><span data-l="ar">الوقت المفضل</span><span data-l="en">Preferred time</span></label>
+        <select id="time" name="time"></select>
+      </div>
+    </div>
+
+    <fieldset>
+      <legend><span data-l="ar">هل هذه زيارتك الأولى؟</span><span data-l="en">Is this your first visit?</span></legend>
+      <div class="opts" style="margin-top:8px">
+        <label class="opt"><input type="radio" name="first" value="yes"><span data-l="ar">نعم</span><span data-l="en">Yes</span></label>
+        <label class="opt"><input type="radio" name="first" value="no"><span data-l="ar">لا</span><span data-l="en">No</span></label>
+      </div>
+    </fieldset>
+
+    <div class="field">
+      <label for="note"><span data-l="ar">ملاحظات (اختياري)</span><span data-l="en">Notes (optional)</span></label>
+      <textarea id="note" name="note" maxlength="300"></textarea>
+      <p class="hint">
+        <span data-l="ar">لا تكتب معلومات طبية أو شخصية حساسة هنا. تُناقَش في العيادة.</span>
+        <span data-l="en">Please do not write medical or sensitive personal details here. These are discussed at the clinic.</span>
+      </p>
+    </div>
+
+    <div class="field">
+      <label for="preview"><span data-l="ar">الرسالة التي ستفتح في واتساب</span><span data-l="en">The message that will open in WhatsApp</span></label>
+      <pre class="preview" id="preview" tabindex="0"></pre>
+    </div>
+
+    <div>
+      <a class="btn btn-dark" id="send" href="#" target="_blank" rel="noopener" aria-disabled="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
+        <span data-l="ar">افتح واتساب</span><span data-l="en">Open WhatsApp</span>
+      </a>
+      <p class="hint" style="margin-top:10px">
+        <span data-l="ar">تبقى بياناتك في متصفحك إلى أن ترسل الرسالة من داخل واتساب. لا تُحفظ في هذه الصفحة.</span>
+        <span data-l="en">Your details stay in your browser until you send the message from inside WhatsApp. They are not stored by this page.</span>
+      </p>
+    </div>
+  </form>
+</main>
+
+<footer class="legal">
+  <div class="wrap">
+    <div class="ar" lang="ar" dir="rtl">
+      <strong>إعلان</strong> · <span class="ltr">James Laser Hair Removal for Men, Harmony Derma</span>، شارع خالد بن الوليد، الحمراء، الرياض.<br>
+      واتساب: <a class="ltr" href="https://wa.me/966557401562">+966 55 740 1562</a> · من السبت إلى الخميس، 1:00 ظهراً – 10:00 مساءً.<br>
+      النتائج تختلف ولا تُضمن. من المضاعفات المحتملة: احمرار وتورم مؤقتان، وتغيّر في لون الجلد، وفي حالات نادرة حروق أو بثور أو ندبات. عدم الالتزام بتعليمات ما بعد الجلسة والمتابعة قد يزيد الخطر.
+    </div>
+    <div class="en" lang="en" dir="ltr">
+      <strong>Advertisement</strong> · James Laser Hair Removal for Men, Harmony Derma, Khalid Bin Walid St, Al Hamra, Riyadh.<br>
+      WhatsApp: <a href="https://wa.me/966557401562">+966 55 740 1562</a> · Saturday to Thursday, 1:00 PM – 10:00 PM.<br>
+      Results vary and are not guaranteed. Possible complications: temporary redness and swelling, skin color changes and, rarely, burns, blisters or scars. Skipping aftercare and follow-up can raise the risk.
+    </div>
+  </div>
+</footer>
+
+<script src="data/areas.js"></script>
+<script src="assets/wa.js"></script>
+<script src="assets/book.js"></script>
+</body>
+</html>

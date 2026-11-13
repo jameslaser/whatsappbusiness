@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local `wrangler dev`. Never commit the real file.
+VERIFY_TOKEN=change-me
+APP_SECRET=change-me
+WHATSAPP_TOKEN=change-me
+PHONE_NUMBER_ID=000000000000000
+REPLIES_ENABLED=false
