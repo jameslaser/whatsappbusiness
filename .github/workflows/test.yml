@@ -19,3 +19,16 @@ jobs:
       - name: Unit tests (offline, no secrets)
         working-directory: api/worker
         run: npm test
+  admin:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Unit tests and build (offline, no secrets)
+        working-directory: admin
+        run: |
+          npm ci
+          npm test
+          node build.mjs

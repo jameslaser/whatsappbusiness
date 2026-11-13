@@ -8,6 +8,7 @@ Harmony Derma, Khalid Bin Walid St, Al Hamra, Riyadh. WhatsApp +966 55 740 1562.
 - **`blogger/`** زر واتساب عائم للمدونة، مع خطوات التركيب.
 - **`api/worker/`** خادم Cloud API جاهز ومُختبَر دون اتصال، **غير منشور**، والردود الآلية متوقفة افتراضياً.
 - **`docs/CLOUD-API-PLAN.md`** الخطة والتكلفة وقائمة ما قبل التفعيل.
+- **`admin/`** لوحة إدارة (مواعيد، عملاء وموافقات، قوالب رسائل، عروض، مناطق) على Supabase مع استضافة مجانية. الإرسال يدوي بروابط واتساب. الدليل: `docs/ADMIN-PORTAL.md`.
 
 ## What is here
 
@@ -16,6 +17,7 @@ Harmony Derma, Khalid Bin Walid St, Al Hamra, Riyadh. WhatsApp +966 55 740 1562.
 | `site/` | Free static site for GitHub Pages: home, appointment-request form that opens WhatsApp with a ready message, link builder for the team (22 areas, Arabic and English) | Browser-tested locally. Not yet published |
 | `blogger/` | Floating WhatsApp button for the Blogger blog, plus install steps | Tested in a desktop page, not inside Blogger |
 | `api/worker/` | WhatsApp Cloud API webhook (Cloudflare Worker) | 53 offline tests. **Not deployed. Replies OFF** |
+| `admin/` | Admin portal on Supabase + GitHub Pages: appointments, clients and consent, message templates, offers, areas. Sending is manual via WhatsApp links | 16 unit tests, 67 browser checks (mock backend), 87 database security checks on the real project. Guide: `docs/ADMIN-PORTAL.md` |
 | `docs/` | Cloud API plan, costs, go-live checklist | |
 
 ## Publish the site (free)
