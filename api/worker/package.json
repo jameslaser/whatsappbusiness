@@ -1,0 +1,10 @@
+{
+  "name": "jlhr-whatsapp-webhook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WhatsApp Cloud API webhook for James Laser Hair Removal for Men (Cloudflare Worker). Not deployed.",
+  "scripts": {
+    "test": "node --test"
+  }
+}
